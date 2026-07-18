@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master, "docs/**"]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install lightweight test deps
+        run: pip install pytest numpy ruff
+      - name: Lint (non-blocking style pass)
+        run: ruff check --output-format=github . || true
+      - name: Run smoke tests (data + retrieval)
+        run: pytest -q tests/
