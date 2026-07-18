@@ -76,8 +76,8 @@ Parameters read from `CreateModel/advanced_agricultural_rag_chatbot.py`:
 ## Installation
 
 ```bash
-git clone https://github.com/Mertcan-Gelbal/LLM-Chatbot.git
-cd LLM-Chatbot
+git clone https://github.com/Mertcan-Gelbal/agricultural-rag-edge-ai.git
+cd agricultural-rag-edge-ai
 pip install -r requirements.txt
 cp .env.example .env        # add keys only if you enable external LLM calls
 ```
