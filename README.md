@@ -1,5 +1,7 @@
 # Agricultural RAG & BERT Classification
 
+[![CI](https://github.com/Mertcan-Gelbal/agricultural-rag-edge-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/Mertcan-Gelbal/agricultural-rag-edge-ai/actions/workflows/ci.yml)
+
 **Language:** English · [Original (mixed TR/EN)](./README.original.md)
 
 Text classification and retrieval-augmented generation (RAG) for the agricultural domain: BERT-family classifiers that route agricultural questions into six categories, plus a sentence-transformers retrieval pipeline, with Streamlit/API front ends and NVIDIA Jetson deployment scripts.
