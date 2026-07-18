@@ -164,7 +164,10 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
+# Ignore ad-hoc/generated test scripts, but keep the committed smoke-test suite.
 test_*.py
+!tests/
+!tests/test_*.py
 
 # Large backup files
 *.backup
